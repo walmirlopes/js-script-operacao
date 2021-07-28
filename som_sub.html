@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+        function calculo(num1, num2, operacao) {
+            //lógica
+            if (operacao == 'soma') {
+                var result = num1 + num2
+
+                return result
+            }
+            if (operacao == 'subtracao') {
+                var result = num1 - num2
+
+                return result
+            }
+        }
+
+        var num1 = prompt('Digite o primeiro número:')
+        var operacao = prompt('Digite a operação:')
+        var num2 = prompt('Digite o segundo número:')
+
+        var num1 = parseFloat(num1)
+        var num2 = parseFloat(num2)
+
+        var result = calculo(num1, num2, operacao)
+
+        document.write('O resultado da ' + operacao + ' entre ' + num1 + ' e ' + num2 + ' é igual a: ' + result)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
